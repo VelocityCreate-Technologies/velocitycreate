@@ -20,7 +20,12 @@ RewriteRule ^ https://velocitycreate.com%{REQUEST_URI} [L,R=301]
 RewriteRule (^|/)\.(?!well-known/) - [F,L]
 RewriteRule (^|/)(README\.md|LICENSE|composer\.(json|lock)|package(-lock)?\.json|.*\.(md|log|sh|py|ps1|bak|old|orig|sql|zip|tar|gz|env|ini|yml|yaml))$ - [F,L,NC]
 
-# 3. This site has no PHP or WordPress: send scanners for those to a 404
+# 3a. Spam pages created by the old WordPress hack: tell Google they are gone for good (410)
+RewriteRule ^(events|stores)\.php$ - [G,L,NC]
+RewriteCond %{QUERY_STRING} (^|&)sitemap [NC]
+RewriteRule \.php$ - [G,L,NC]
+
+# 3b. This site has no PHP or WordPress: send scanners for those to a 404
 RewriteRule \.php$ - [R=404,L,NC]
 RewriteRule ^(wp-admin|wp-login|wp-json|xmlrpc|wp-config|wp-cron|cgi-bin|phpmyadmin|admin|administrator|user/login|\.env)(/|$|\.) - [R=404,L,NC]
 
