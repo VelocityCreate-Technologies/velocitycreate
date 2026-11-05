@@ -32,6 +32,17 @@ RewriteRule ^(wp-admin|wp-login|wp-json|xmlrpc|wp-config|wp-cron|cgi-bin|phpmyad
 # 4. Old WordPress feeds -> home page
 RewriteRule ^(feed|comments/feed)(/.*)?$ / [R=301,L]
 
+# 4a. Old WordPress pages that have a real replacement: move permanently (keeps any Google value)
+RewriteRule ^(our-blog-2-2|category|tag|author|2026|2025|2024)(/.*)?$ /our-blogs/ [R=301,L,NC]
+RewriteRule ^(portfolio-list|portfolio|pxl-portfolio-category|pxl-portfolio-tag)(/.*)?$ /portfolio-grid/ [R=301,L,NC]
+RewriteRule ^team/?$ /about-us/ [R=301,L,NC]
+RewriteRule ^(our-blogs|portfolio-grid)/page/[0-9]+/?$ /$1/ [R=301,L,NC]
+
+# 4b. Theme demo, shop and template pages that were never part of the real site: gone for good (410)
+RewriteRule ^(pxl-template|metform-form|product-brand|product|product-category|product-tag|shop|cart|checkout|my-account|wishlist|ai-chatbot|one-page|theme-landing|pricing|marketing-startup|application-landing|it-solution|software-company|saas-technology|newsletter|elementor-hf|e-landing-page|elementor_library|wp-content/uploads/(wpforms|metform))(/.*)?$ - [G,L,NC]
+RewriteCond %{QUERY_STRING} (^|&)(p|page_id|cat|tag|author|s|attachment_id|post_type|product)= [NC]
+RewriteRule ^$ - [G,L]
+
 # 5. Only allow normal page requests
 RewriteCond %{REQUEST_METHOD} !^(GET|HEAD|OPTIONS)$
 RewriteRule ^ - [R=405,L]
