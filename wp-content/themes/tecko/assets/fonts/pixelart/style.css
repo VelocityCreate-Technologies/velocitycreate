@@ -1,0 +1,210 @@
+@font-face {
+  font-family: 'pixelart';
+  src:
+    url('fonts/pixelart.ttf?fofeos') format('truetype'),
+    url('fonts/pixelart.woff?fofeos') format('woff'),
+    url('fonts/pixelart.svg?fofeos#pixelart') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="pxli-"], [class*=" pxli-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'pixelart' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pxli-long-arrow-left:before {
+  content: "\e935";
+}
+.pxli-angle-up:before {
+  content: "\e934";
+}
+.pxli-scale:before {
+  content: "\e92e";
+}
+.pxli-headphone:before {
+  content: "\e930";
+}
+.pxli-micro:before {
+  content: "\e932";
+}
+.pxli-message:before {
+  content: "\e933";
+}
+.pxli-stars-2:before {
+  content: "\e92c";
+}
+.pxli-long-arrow-right:before {
+  content: "\e92b";
+}
+.pxli-arrow-up:before {
+  content: "\e923";
+}
+.pxli-close:before {
+  content: "\e91c";
+}
+.pxli-arrow-top-right-2:before {
+  content: "\e924";
+}
+.pxli-search:before {
+  content: "\e922";
+}
+.pxli-user:before {
+  content: "\e921";
+}
+.pxli-sync:before {
+  content: "\e920";
+}
+.pxli-chplay:before {
+  content: "\e91e";
+}
+.pxli-apple:before {
+  content: "\e91f";
+}
+.pxli-dot-cross:before {
+  content: "\e91d";
+}
+.pxli-sidebar:before {
+  content: "\e91b";
+}
+.pxli-cart:before {
+  content: "\e91a";
+}
+.pxli-tecko-check:before {
+  content: "\e919";
+}
+.pxli-tecko-quote-1:before {
+  content: "\e918";
+}
+.pxli-tecko-quote:before {
+  content: "\e917";
+}
+.pxli-tecko-plane:before {
+  content: "\e916";
+}
+.pxli-dot:before {
+  content: "\e915";
+}
+.pxli-info:before {
+  content: "\e914";
+}
+.pxli-element_4:before {
+  content: "\e910";
+}
+.pxli-element_3:before {
+  content: "\e911";
+}
+.pxli-element_2:before {
+  content: "\e912";
+}
+.pxli-element_1:before {
+  content: "\e913";
+}
+.pxli-paper-plane:before {
+  content: "\e90f";
+}
+.pxli-arrow-top-right:before {
+  content: "\e90e";
+}
+.pxli-triangle:before {
+  content: "\e90d";
+}
+.pxli-stars:before {
+  content: "\e90c";
+}
+.pxli-star-rating:before {
+  content: "\e90b";
+}
+.pxli-angle-right:before {
+  content: "\e909";
+}
+.pxli-angle-left:before {
+  content: "\e90a";
+}
+.pxli-code:before {
+  content: "\e907";
+}
+.pxli-shield-zap:before {
+  content: "\e908";
+}
+.pxli-cube:before {
+  content: "\e905";
+}
+.pxli-star:before {
+  content: "\e906";
+}
+.pxli-arrow-left:before {
+  content: "\e903";
+}
+.pxli-arrow-right:before {
+  content: "\e904";
+}
+.pxli-heart:before {
+  content: "\e902";
+}
+.pxli-icons-link:before {
+  content: "\e901";
+}
+.pxli-search-400:before {
+  content: "\e978";
+}
+.pxli-facebook:before {
+  content: "\e925";
+}
+.pxli-instagram:before {
+  content: "\e92d";
+}
+.pxli-linkedin:before {
+  content: "\e92f";
+}
+.pxli-pinterest:before {
+  content: "\e931";
+}
+.pxli-behance-brands:before {
+  content: "\e988";
+}
+.pxli-dribbble:before {
+  content: "\e986";
+}
+.pxli-twitter:before {
+  content: "\e900";
+}
+.pxli-feed:before {
+  content: "\e92a";
+}
+.pxli-tumblr:before {
+  content: "\e929";
+}
+.pxli-skype:before {
+  content: "\e928";
+}
+.pxli-vimeo:before {
+  content: "\e927";
+}
+.pxli-youtube:before {
+  content: "\e926";
+}
+.pxli-github:before {
+  content: "\eab0";
+}

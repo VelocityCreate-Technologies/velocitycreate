@@ -1,0 +1,29 @@
+.container{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 15px;
+}
+@media( min-width: 1200px){
+    .container{
+        padding: 0 24px;
+    }   
+}
+.pxl-col-2{
+    width: calc( 100% * 2/12);
+}
+.pxl-col-8{
+    width: calc( 100% * 8/12);
+}
+
+.pxl-col{
+    width: 100%;
+}
+
+@media( min-width: 1025px){
+    .pxl-col-lg-2{
+        width: calc( 100% * 2/12);
+    }
+    .pxl-col-lg-8{
+        width: calc( 100% * 8/12);
+    }
+}
